@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>魔法世界 </title>
+</head>
+
+<body>
+<script src="mima.js"></script><!--密码定义在 mima.js 里面-->
+<script>
+	function password() {		
+		var testV = 1;//计数器，记录密码错误次数
+		var mima = prompt("请输入咒语","");
+		while (testV < 2) {
+			if (!mima){
+				history.go(-1);//密码错误返回上一页
+			}
+			if (mima == xx) {
+				location.href="D:\软件\VScode\HTML\动画.html";//密码正确，跳到指定页面
+				break;
+			}
+			testV+=1;
+			mima=prompt("请输入咒语","");
+		}
+		if (mima!=xx && testV ==2){
+			alert("你是一个麻瓜");//密码输入错误达到3次
+		}
+			return " ";
+	}
+	
+	password();
+
+</script>
+</body>
+</html>
+妖魔鬼怪快离开

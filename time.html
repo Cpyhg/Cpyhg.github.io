@@ -1,0 +1,35 @@
+
+        <script type="text/javascript">
+            function show_date_time() {
+                if ($("#span_dt_dt").length > 0) {
+                    window.setTimeout("show_date_time()", 1000);
+                    BirthDay = new Date("11/18/2021 12:00:00");
+                    today = new Date();
+                    timeold = (today.getTime() - BirthDay.getTime());
+                    sectimeold = timeold / 1000;
+                    secondsold = Math.floor(sectimeold);
+                    msPerDay = 24 * 60 * 60 * 1000;
+                    e_daysold = timeold / msPerDay;
+                    daysold = Math.floor(e_daysold);
+                    e_hrsold = (e_daysold - daysold) * 24;
+                    hrsold = Math.floor(e_hrsold);
+                    e_minsold = (e_hrsold - hrsold) * 60;
+                    minsold = Math.floor((e_hrsold - hrsold) * 60);
+                    seconds = Math.floor((e_minsold - minsold) * 60);
+                    span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                };
+            }
+            show_date_time();
+        </script>
+        <script type="text/javascript">
+            function new_date_time() {
+                window.setTimeout("new_date_time()", 30000);
+                var today = new Date();
+                var Hours = today.getHours();
+                Hours = Hours > 9 ? Hours : "0" + Hours;
+                var Minutes = today.getMinutes();
+                Minutes = Minutes > 9 ? Minutes : "0" + Minutes;
+                $(".new_date_time").text(Hours + ":" + Minutes);
+            }
+            new_date_time();
+        </script>
