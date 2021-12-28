@@ -1,0 +1,107 @@
+
+<!-- 
+作者：ZhangDi
+https://github.com/616620131/photo-page-for-typecho
+时间:2020-05-15 版权所有，请勿删除 
+-->
+<!-- jsdelivr公共CDN -->
+<!-- 公共CDN结束 -->
+<!-- 相册图片对象存储供应商，用以加载缩略图 -->
+<!-- 由于Lens模板的缩略图没有固定比例，故将裁剪工作交给云 -->
+<!-- 自动缩略图结束 -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>煤球 </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/css/main.css" />
+	<link rel="shortcut icon" href="https://www.mofltye.top//favicon.ico">
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/css/noscript.css" /></noscript>
+	<!-- 百度统计 -->
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?e804e37f8afa68b911afdd756b4314c7";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</head>
+
+<body class="is-preload-0 is-preload-1 is-preload-2">
+	<!-- Main -->
+	<div id="main">
+		<!-- Header -->
+		<header id="header">
+			<h1>煤球</h1>
+							<p>凶萌干饭猫</p>
+						<ul class="icons">
+																			</ul>
+		</header>
+
+		<!-- Thumbnail -->
+		<section id="thumbnails">
+		</section>
+		<!-- Footer -->
+		<footer id="footer">
+			<!-- 虽说本页面制作容易，但也需要一点点时间编辑，请保留版权信息。 -->
+			<ul class="copyright">
+				<li>&copy; 2017😾 <a href="page.html">煤球</a></li>
+
+			</ul>
+		</footer>
+	</div>
+	<!--
+		动态读取数据 by ZhangDi
+		https://github.com/616620131/photo-page-for-typecho
+	-->
+	<script type="text/javascript">
+		var datas =
+		`一只小奶猫,2017年10月,https://www.helloimg.com/images/2021/12/28/GpELv0.jpg
+太可爱了我的妈啊,2017年10月,https://www.helloimg.com/images/2021/12/28/GpEgqg.jpg
+🐷,2019年11月,https://www.helloimg.com/images/2021/12/28/GpE2nT.jpg
+🐷,2019年11月,https://www.helloimg.com/images/2021/12/28/GpEMFr.jpg
+凶,2021年3月,https://www.helloimg.com/images/2021/12/28/GpEHTc.jpg
+望父石,2021年11月13日,https://www.helloimg.com/images/2021/12/28/GpET71.jpg
+暗中观察,2021年11月13日,https://www.helloimg.com/images/2021/12/27/GQg35g.jpg
+圣诞喵,2021年12月25日,https://www.helloimg.com/images/2021/12/27/GQgazX.jpg`;
+		datas = datas.split("\n");
+		for (var i = 0; i < datas.length; i++) {
+			datas[i] = datas[i].split(",");
+		}
+
+		function creatArticle(datas) {
+			var parent = document.getElementById("thumbnails");
+			for (var i = 0; i < datas.length; i++) {
+				var article = document.createElement("article");
+				article.className = "thumb";
+				parent.appendChild(article);
+				var a = document.createElement("a");
+				a.className = "thumbnail";
+				a.href = datas[i][2];
+				article.appendChild(a);
+				var img = document.createElement("img");
+				img.src = datas[i][2] + "";
+				a.appendChild(img);
+				var h2 = document.createElement("h2");
+				h2.innerHTML = datas[i][0];
+				article.appendChild(h2);
+				var p = document.createElement("p");
+				p.innerHTML = datas[i][1];
+				article.appendChild(p);
+			}
+		}
+		creatArticle(datas);
+	</script>
+	<!-- Scripts -->
+	<script src="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/js/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/js/browser.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/js/breakpoints.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/616620131/photo-page-for-typecho@2.0/Lens/js/main.js"></script>
+</body>
+
+</html>
