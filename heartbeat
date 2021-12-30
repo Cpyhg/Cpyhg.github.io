@@ -1,0 +1,713 @@
+<div class="layout">
+
+
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+        <link  rel="love.ico"  href="/favicon.ico"> 
+<link  rel="Shortcut Icon"  href="love.ico.png">
+<link  rel="Bookmark" href="/love.ico.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <title>《心动的情绪》             </title>
+                            <style type="text/css">
+                    body:before {
+                        background-image: url(sunsetpic.jpg) !important;
+                    }
+                </style>
+                                <style type="text/css">
+                                    p{ text-indent:2em;}
+                    body:before {
+                        filter: blur(0px) !important;
+                    }
+                </style>
+                    <!-- 引入主题css -->
+                <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/style-two.min.css">
+            <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/post-two.min.css">
+            <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/media-two.min.css">
+            <!-- 引入文章内容样式css -->
+            <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/article-content-two.min.css">
+            <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/OwO.min.css">
+        <!-- 代码块高亮 -->
+        <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/css/dist/shades-of-purple.min.css">
+        <!-- pjax加载动画css -->
+        <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/lib/nprogress/nprogress.css">
+        <!-- 图片灯箱 -->
+        <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/lib/fancybox/jquery.fancybox.min.css">
+        <!-- 播放器CSS -->
+        <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/lib/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="https://www.mofltye.top/usr/themes/Destiny/assets/lib/notyf/notyf.min.css">
+                <!-- 引入jQuery -->
+        <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/jquery/jquery-3.3.1.min.js"></script>
+        <!-- 引入视窗加载动画js -->
+        <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/scrollreveal/scrollreveal.min.js"></script>
+        <!-- 引入3DTag -->
+        <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/tagcanvas/jquery.tagcanvas.min.js"></script>
+            <!-- 通过自有函数输出HTML头部信息 -->
+        <meta name="description" content="安装方式：/bin/zsh -c &amp;quot;$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)&amp;q..." />
+    <meta name="generator" content="Typecho 1.1/17.10.30" />
+    <meta name="template" content="Destiny" />
+    <link rel="pingback" href="https://www.mofltye.top/index.php/action/xmlrpc" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.mofltye.top/index.php/action/xmlrpc?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.mofltye.top/index.php/action/xmlrpc?wlw" />
+    <link rel="alternate" type="application/rss+xml" title="mac安装Homebrew &raquo; Mofltye's World &raquo; RSS 2.0" href="https://www.mofltye.top/index.php/feed/archives/32/" />
+    <link rel="alternate" type="application/rdf+xml" title="mac安装Homebrew &raquo; Mofltye's World &raquo; RSS 1.0" href="https://www.mofltye.top/index.php/feed/rss/archives/32/" />
+    <link rel="alternate" type="application/atom+xml" title="mac安装Homebrew &raquo; Mofltye's World &raquo; ATOM 1.0" href="https://www.mofltye.top/index.php/feed/atom/archives/32/" />
+    <script type="text/javascript">
+    (function () {
+        window.TypechoComment = {
+            dom : function (id) {
+                return document.getElementById(id);
+            },
+        
+            create : function (tag, attr) {
+                var el = document.createElement(tag);
+            
+                for (var key in attr) {
+                    el.setAttribute(key, attr[key]);
+                }
+            
+                return el;
+            },
+    
+            reply : function (cid, coid) {
+                var comment = this.dom(cid), parent = comment.parentNode,
+                    response = this.dom('respond-post-32'), input = this.dom('comment-parent'),
+                    form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                    textarea = response.getElementsByTagName('textarea')[0];
+    
+                if (null == input) {
+                    input = this.create('input', {
+                        'type' : 'hidden',
+                        'name' : 'parent',
+                        'id'   : 'comment-parent'
+                    });
+    
+                    form.appendChild(input);
+                }
+    
+                input.setAttribute('value', coid);
+    
+                if (null == this.dom('comment-form-place-holder')) {
+                    var holder = this.create('div', {
+                        'id' : 'comment-form-place-holder'
+                    });
+    
+                    response.parentNode.insertBefore(holder, response);
+                }
+    
+                comment.appendChild(response);
+                this.dom('cancel-comment-reply-link').style.display = '';
+    
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea.focus();
+                }
+    
+                return false;
+            },
+    
+            cancelReply : function () {
+                var response = this.dom('respond-post-32'),
+                holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+    
+                if (null != input) {
+                    input.parentNode.removeChild(input);
+                }
+    
+                if (null == holder) {
+                    return true;
+                }
+    
+                this.dom('cancel-comment-reply-link').style.display = 'none';
+                holder.parentNode.insertBefore(response, holder);
+                return false;
+            }
+        };
+    })();
+    </script>
+    <script type="text/javascript">
+    (function () {
+        var event = document.addEventListener ? {
+            add: 'addEventListener',
+            triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'],
+            load: 'DOMContentLoaded'
+        } : {
+            add: 'attachEvent',
+            triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'],
+            load: 'onload'
+        }, added = false;
+    
+        document[event.add](event.load, function () {
+            var r = document.getElementById('respond-post-32'),
+                input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = '_';
+            input.value = (function () {
+        var _72S6fYP = '1b7'//'T'
+    +//'M'
+    '260'+'1'//'WP'
+    +//'C'
+    'fe8'+'516'//'NcH'
+    +//'vQO'
+    'a8'+'3'//'u'
+    +''///*'U'*/'U'
+    +/* 'Pg'//'Pg' */''+//'a'
+    'e35'+'7'//'p'
+    +//'uui'
+    '170'+//'6'
+    '2ad'+//'do'
+    'b7'+//'I'
+    '7'+'7b8'//'Pxh'
+    , _EHJ = [];
+        
+        for (var i = 0; i < _EHJ.length; i ++) {
+            _72S6fYP = _72S6fYP.substring(0, _EHJ[i][0]) + _72S6fYP.substring(_EHJ[i][1]);
+        }
+    
+        return _72S6fYP;
+    })();
+    
+            if (null != r) {
+                var forms = r.getElementsByTagName('form');
+                if (forms.length > 0) {
+                    function append() {
+                        if (!added) {
+                            forms[0].appendChild(input);
+                            added = true;
+                        }
+                    }
+                
+                    for (var i = 0; i < event.triggers.length; i ++) {
+                        var trigger = event.triggers[i];
+                        document[event.add](trigger, append);
+                        window[event.add](trigger, append);
+                    }
+                }
+            }
+        });
+    })();
+    </script>
+    <link rel="amphtml" href="https://www.mofltye.top/index.php/amp/32">
+    <link rel="miphtml" href="https://www.mofltye.top/index.php/mip/32">
+    </head>
+    <body>
+    <div class="back-to-home"><a href="https://cpyyhg.love/">🏠</a></div>
+    <div class="menu-btn" id="menu-btn">&#127775;</div>
+    <div id="aplayer"></div>
+    
+    <div class="layout">
+        <div class="sidebar">
+            <a href="https://cpyyhg.love/">
+                <div class="sidebar-time">
+                    <span class="new_date_time"></span>
+                </div>
+            </a>
+            <div class="sidebar-content">
+                <div class="search-for">
+                    <form id="search" method="post" action="https://cpyyhg.love/" role="search">
+                        <input type="text" id="s" name="s" class="search-text" placeholder="Search..." />
+                        <button type="submit" class="search-btn">🔍</button>
+                    </form>
+                </div>
+                <div class="menubar">
+                                    <ul>
+                                        <li><a href="page.html">首页</a></li>
+                                        <li><a href="chen.htmlL">小陈</a></li>
+                                        <li><a href="yao.html" title="小姚">小姚</a></li>
+                                         <li><a href="meiqiu.html" title="煤球">煤球</a></li>
+                                        <li><a href="we.html" title="我们">我们</a></li>
+                                        <li><a href="about.html" title="关于">关于</a></li>
+                                </ul>
+                </div>
+            </div>
+        </div>
+    </div><div id="pjax-container">
+        <main id="main">
+    <div class="layout">
+        <div class="article">
+            <article class="article-body">
+                <div class="breadcrumb"><a href="https://cpyyhg.love/" title="yhg"></div>
+                              
+                            <div class="article-meta">
+                                <span>《心动瞬间》</span><br>
+                    <span>2021-12-30</span><br>
+                    <span>热度520℃</span><br>
+                </div>
+                <div itemprop="article-keywords" class="tags">
+                                </div>
+                <div class="article-content" itemprop="articleBody">
+                    <div id="md_content_2" class="md_content" style="min-height: 50px;"><textarea id="append-test" style="display:none;">最近随口聊起过年回家的事情，从一开始说起这件事小陈就坚持送我去车站，我觉得工作日还要请假多麻烦呀，我自己也能顺利回家呀。昨天睡觉前打电话的时候小陈说要送我进站，我说没必要呀，我自己可以的。小陈说那不是很久见不到嘛。我开始回想在每周短短的4天工作日“异地”期间，我们思念对方的频次越来越高，聊天记录里”想你“的条数也越来越多，这样换算的话，12天已经相当于我们三周没见面。况且，爱情中的想念程度是以指数增长。宝贝，你今天想我了吗。 </p></textarea></div>			</div>
+                 
+    <script type="text/javascript">
+    (function () {
+        window.TypechoComment = {
+            dom : function (id) {
+                return document.getElementById(id);
+            },
+        
+            create : function (tag, attr) {
+                var el = document.createElement(tag);
+            
+                for (var key in attr) {
+                    el.setAttribute(key, attr[key]);
+                }
+            
+                return el;
+            },
+    
+            reply : function (cid, coid) {
+                var comment = this.dom(cid), parent = comment.parentNode,
+                    response = this.dom('respond-post-32'), input = this.dom('comment-parent'),
+                    form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                    textarea = response.getElementsByTagName('textarea')[0];
+    
+                if (null == input) {
+                    input = this.create('input', {
+                        'type' : 'hidden',
+                        'name' : 'parent',
+                        'id'   : 'comment-parent'
+                    });
+    
+                    form.appendChild(input);
+                }
+    
+                input.setAttribute('value', coid);
+    
+                if (null == this.dom('comment-form-place-holder')) {
+                    var holder = this.create('div', {
+                        'id' : 'comment-form-place-holder'
+                    });
+    
+                    response.parentNode.insertBefore(holder, response);
+                }
+    
+                comment.appendChild(response);
+                this.dom('cancel-comment-reply-link').style.display = '';
+    
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea.focus();
+                }
+    
+                return false;
+            },
+    
+            cancelReply : function () {
+                var response = this.dom('respond-post-32'),
+                holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+    
+                if (null != input) {
+                    input.parentNode.removeChild(input);
+                }
+    
+                if (null == holder) {
+                    return true;
+                }
+    
+                this.dom('cancel-comment-reply-link').style.display = 'none';
+                holder.parentNode.insertBefore(response, holder);
+                return false;
+            }
+        };
+    })();
+    </script>
+    <script src="0" type="text/javascript"></script>
+    <link rel="amphtml" href="https://www.mofltye.top/index.php/amp/32">
+    <link rel="miphtml" href="https://www.mofltye.top/index.php/mip/32">
+    
+    
+    
+    <script type="text/javascript">
+        // Ajax评论
+        $(function () {
+            var replyTo = '',  //回复评论时候的ID
+            submitButton = $(".submit").eq(0),  //提交评论按钮
+            commentForm = $("#comment-form"),  //评论表单
+            newCommentId = "";  //新评论的ID
+            var notyf = new Notyf({delay:3000});  //评论成功或者失败的提示插件
+            var bindButton = function () {
+                $(".comment-reply a").click(function () {
+                    replyTo = $(this).parent().parent().parent().attr("id");
+                });
+                $(".cancel-comment-reply a").click(function () {
+                    replyTo = '';
+                });
+            };
+            bindButton();
+            // 评论数目加一
+            function commentCounts() {
+                if ($("#comments>h3").text() == '暂无评论') {
+                    $("#comments>h3").text("仅有一条评论");
+                } else if ($("#comments>h3").text() == '仅有一条评论') {
+                    $("#comments>h3").text("已有 2 条评论");
+                } else {
+                    var counts = parseInt($("#comments>h3").text().match(/\d+/)[0]);
+                    $("#comments>h3").text($("#comments>h3").text().replace(/\d+/, counts + 1));
+                };
+            };
+            // 发送前的处理
+            function beforeSendComment() {
+                submitButton.attr("disabled", true).css('cursor', 'not-allowed');
+                $("textarea", commentForm).css({'background': 'url("/usr/themes/Destiny/images/loading.svg") center center no-repeat'});
+                $("input,textarea", commentForm).attr('disabled', true);
+            }
+            // 发送后的处理
+            function afterSendComment(ok) {
+                submitButton.attr("disabled", false).css('cursor', 'pointer');
+                $("textarea", commentForm).css({'background': 'rgba(255, 255, 255, .7)'});
+                $("input,textarea", commentForm).attr('disabled', false);
+                if (ok) {
+                    $("#textarea").val('');
+                    replyTo = '';
+                }
+                bindButton();
+            }
+            $("#comment-form").submit(function () {
+                commentData = $(this).serializeArray();
+                // 准备发送数据
+                beforeSendComment();
+                $.ajax({
+                    type: $(this).attr('method'),
+                    url: $(this).attr('action'),
+                    data: commentData,
+                    error: function (e) {
+                        console.log('Ajax Comment Error');
+                        window.location.reload();
+                    },
+                    success: function (data) {
+                        if (!$('#comments', data).length) {
+                            var msg = $('title').eq(0).text().trim().toLowerCase() === 'error' ? $('.container', data).eq(0).text() : '评论提交失败！';
+                            notyf.error(msg);
+                            afterSendComment(false);
+                            return false;
+                        }
+                        $("input,textarea", commentForm).attr('disabled', false);
+                        $("#textarea").val('');
+                        var newComment;
+                        // 获取新评论的id
+                        newCommentId = $(".comment-list", data).html().match(/id=\"?comment-\d+/g).join().match(/\d+/g).sort(function (a, b) {return a - b}).pop();
+                        // 处理父级评论
+                        if ('' === replyTo) {
+                            if (!$('.comment-list').length) {
+                                newComment = $("#li-comment-" + newCommentId, data);
+                                $('#comments>h3').after('<ol class="comment-list"></ol>');
+                                $('.comment-list').first().prepend((newComment).addClass('CommentFadeIn'));
+                            } else if ($('.prev').length) {
+                                $('.comment-page ol li a').eq(1).click();
+                            } else {
+                                newComment = $("#li-comment-" + newCommentId, data);
+                                $('.comment-list').first().prepend((newComment).addClass('CommentFadeIn'));
+                            }
+                            $('html,body').animate({scrollTop: $('#comments>h3').offset().top - 100}, 1000);
+                        }
+                        // 处理子评论
+                        else {
+                            // 取数据
+                            newComment = $("#li-comment-" + newCommentId, data);
+                            if ($('#li-' + replyTo).find('.comment-children').length) {
+                                // 已存在.comment-children 直接插入新数据
+                                $('#li-' + replyTo + ' .comment-children .comment-list').first().prepend((newComment).addClass('CommentFadeIn'));
+                                TypechoComment.cancelReply();
+                            } else {
+                                // 创建一个.comment-children
+                                $('#li-' + replyTo).append('<div class="comment-children"><ol class="comment-list"></ol></div>');
+                                $('#li-' + replyTo + ' .comment-children .comment-list').first().prepend((newComment).addClass('CommentFadeIn'));
+                                TypechoComment.cancelReply();
+                            }
+                        }
+                        commentCounts();
+                        afterSendComment(true);
+                        notyf.success('评论提交成功！');
+                    }
+                });
+                return false;
+            });
+        });
+    </script>	</div>
+    </div>
+    
+    <script type="text/javascript">
+        var tagsarray = $(".tags a");
+        var tags_class = new Array();
+        tags_class = ["tag-color1", "tag-color2", "tag-color3", "tag-color4", "tag-color5", "tag-color6", "tag-color7", "tag-color8", "tag-color9", "tag-color10"];
+        for (var i = 0; i < tagsarray.length; i++) {
+            tagsarray[i].className = tags_class[Math.floor(Math.random() * 10)];
+        };
+        function getDirectory() {
+            var Directory = '';
+            $('.article-content>h3').each(function() {
+                Directory += '<li data-height="' + $(this).offset().top + '" onclick="h3jump(this)">' + $(this).text() + '</li>';
+            });
+            $('.directory-content').html(Directory);
+        }
+        $(document).ready(function () {
+            getDirectory();
+            if ($('.article-content>h3').length != 0) {
+                $(".article-directory").css("left", "20px");
+                $(".article-directory").css("opacity", "1");
+            }
+        });
+        $(".article-content>img").on("load", function() {
+            getDirectory();
+        });
+        function h3jump(obj) {
+            getDirectory();
+            var jumpheight = $(obj).attr("data-height") - 20;
+            $('body, html').animate({scrollTop: jumpheight}, 500);
+        }
+    </script>
+    <script type="text/javascript">
+    function imgWaterfall() {
+        var img_list = $(".img-list img");  //获取所有item
+        if (img_list.length > 0) {
+            var img = new Image();
+            var interval_r = 50;  //每个item的右间隔
+            var interval_t = 10;  //每个item的上间隔
+            var item_width = img_list[0].offsetWidth;  //获取第一个item的宽度
+            var items_width = item_width + interval_r;  //取区块的实际宽度
+            var container_width = $(".img-list")[0].offsetWidth;  //获取容器宽度
+            var n = parseInt(container_width / item_width);  //一行所允许放置的item个数
+            //寻找数组最小高度的下标
+            function findMinIndex(arr) {
+                var len = arr.length, min = 999999, index = -1;
+                for (var i = 0; i < len; i++) {
+                    if (min > arr[i]) {
+                        min = arr[i];
+                        index = i;
+                    }
+                }
+                return index;
+            }
+            //放置item
+            function putItem() {
+                var items_height = [];  //每个item的高度数组
+                var len = img_list.length;  //获取item的个数
+                for (var i = 0; i < len; i++) {
+                    (function(i) {
+                        var item_height;  //获取每个item的高度
+                        var check = function() {
+                            img.src = img_list[i].src;
+                            if (img.width > 0 || img.height > 0) {
+                                img_list[i].setAttribute("width", item_width + "px");
+                                img_list[i].setAttribute("height", img.height * (item_width / img.width) + "px");
+                                item_height = img_list[i].offsetHeight;
+                                if (i < n) {
+                                    items_height[i] = item_height;  //高度数组更新
+                                    img_list.eq(i).css("position", "absolute");
+                                    img_list.eq(i).css("top", 0);
+                                    img_list.eq(i).css("left", i * items_width);
+                                } else {  //放置在其他行的item
+                                    var min_index = findMinIndex(items_height);  //寻找最小高度下标
+                                    if (min_index == -1) {
+                                        console.log("高度计算出现错误");
+                                        return;
+                                    }
+                                    img_list.eq(i).css("position", "absolute");
+                                    img_list.eq(i).css("top", items_height[min_index] + interval_t);
+                                    img_list.eq(i).css("left", min_index * items_width);
+                                    items_height[min_index] += item_height + interval_t;  //高度数组更新
+                                }
+                                var max_height = Math.max.apply(null, items_height);
+                                $(".img-list").css("height", max_height);  //最后更新容器高度
+                                clearInterval(set);
+                            }
+                        };
+                        var set = setInterval(check, 50);
+                    })(i);
+                };
+            };
+            putItem();
+        }
+    };
+    imgWaterfall();
+        window.onresize = function() {imgWaterfall();}
+    </script>
+    
+        </main>
+                <div class="article-directory">
+                <h3 class="directory-title">目录</h3>
+                <ul class="directory-content"></ul>
+            </div>
+            <a class="post-near-next" href="highquality.html" title=""><span>▲</span></a>	
+            	<a class="post-near-prev" href="heartbeat.html" title=""><span>▼</span></a>	</div>
+            <div class="theme-copyright">
+                <p>我们已相爱：<span id="span_dt_dt"></span></p>
+    <p>❤Copyright &copy; yao❤</p>
+    <p>Powered by Typecho • Theme by Destiny></p>
+<!-- 请尊重作者，请务必保留版权 -->
+<span id="touch-to-top">↑</span>
+</div>
+    
+    <script type="text/javascript">
+        var index_config = {
+                        reset: true, // 再次显示元素时是否重新动画（如果为true，动画可以执行n次）
+                    origin: 'bottom', // 动画开始的方向
+            distance: '50px', // 位移
+            duration: 1000, // 动画持续时间
+            opacity: 0, // 初始透明度
+            scale: 0.95, // 缩放
+            interval: 100,
+            easing: 'ease', // 动画效果'ease', 'ease-in-out', 'linear'...
+                };
+        var post_config = {
+            reset: false, // 再次显示元素时是否重新动画（如果为true，动画可以执行n次）
+            origin: 'bottom', // 动画开始的方向
+            //distance: '50px', // 位移
+            duration: 1000, // 动画持续时间
+            opacity: 0, // 初始透明度
+            easing: 'ease' // 动画效果'ease', 'ease-in-out', 'linear'...
+        };
+        window.sr = ScrollReveal();
+        sr.reveal('.article-item', index_config);
+        sr.reveal('.article-content', post_config);
+    </script>
+    
+    <!-- 引入主题js -->
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/js/dist/Destiny.min.js"></script>
+    
+    <!-- 引入代码高亮js -->
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/highlight/highlight.pack.min.js"></script>
+    
+    <!-- 引入pjax -->
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/pjax/jquery.pjax.min.js"></script>
+    
+    <!-- pjax加载动画js -->
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/nprogress/nprogress.js"></script>
+    
+    <!-- 图片灯箱js -->
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/fancybox/jquery.fancybox.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/aplayer/APlayer.min.js"></script>
+    
+    <script type="text/javascript" src="https://www.mofltye.top/usr/themes/Destiny/assets/lib/notyf/notyf.min.js"></script>
+    
+    <script type="text/javascript">
+        hljs.initHighlightingOnLoad();
+        function reHighlightCodeBlock() {
+            $('pre code').each(function(i, block) {
+                hljs.highlightBlock(block);
+            });
+        };
+    </script>
+    
+    
+        <script type="text/javascript">
+            function show_date_time() {
+                if ($("#span_dt_dt").length > 0) {
+                    window.setTimeout("show_date_time()", 1000);
+                    BirthDay = new Date("11/13/2021 00:00:00");
+                    today = new Date();
+                    timeold = (today.getTime() - BirthDay.getTime());
+                    sectimeold = timeold / 1000;
+                    secondsold = Math.floor(sectimeold);
+                    msPerDay = 24 * 60 * 60 * 1000;
+                    e_daysold = timeold / msPerDay;
+                    daysold = Math.floor(e_daysold);
+                    e_hrsold = (e_daysold - daysold) * 24;
+                    hrsold = Math.floor(e_hrsold);
+                    e_minsold = (e_hrsold - hrsold) * 60;
+                    minsold = Math.floor((e_hrsold - hrsold) * 60);
+                    seconds = Math.floor((e_minsold - minsold) * 60);
+                    span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                };
+            }
+            show_date_time();
+        </script>
+        <script type="text/javascript">
+            function new_date_time() {
+                window.setTimeout("new_date_time()", 30000);
+                var today = new Date();
+                var Hours = today.getHours();
+                Hours = Hours > 9 ? Hours : "0" + Hours;
+                var Minutes = today.getMinutes();
+                Minutes = Minutes > 9 ? Minutes : "0" + Minutes;
+                $(".new_date_time").text(Hours + ":" + Minutes);
+            }
+            new_date_time();
+        </script>
+    
+    
+    <script type="text/javascript">
+        $(document).pjax('a[href^="https://www.mofltye.top/"]:not(a[target="_blank"], a[no-pjax])', {
+            container: '#pjax-container',
+            fragment: '#pjax-container',
+            timeout: 8000
+        }).on('pjax:send',
+        function() {
+            NProgress.start(); // 加载动画效果开始
+                }).on('pjax:complete',
+        function() {
+            NProgress.done(); // 加载动画效果结束
+                        new_date_time();
+                    sr.reveal('.article-item', index_config);
+            sr.reveal('.article-content', post_config); // 加载动画函数重载
+            setupContents();
+            Comment_verification(); // 评论验证
+            commentReversal();
+            reHighlightCodeBlock(); // 代码高亮函数重载
+            $(".appreciate-btn").on("click", function(e) {
+                $(".qr-code").addClass('qr-code-display');
+                $(document).one("click", function() {
+                    $(".qr-code").removeClass('qr-code-display');
+                });
+                e.stopPropagation();
+            });
+        });
+        $(document).on('submit', '#search', function(event) {
+            $.pjax.submit(event, '#pjax-container', {
+                fragment: '#pjax-container',
+                timeout: 8000
+            });
+        });
+    </script>
+    
+    
+    
+    <link rel="stylesheet" href="https://www.mofltye.top/usr/plugins/EditorMD/css/emojify.min.css" />
+    <script type="text/javascript">
+        window.jQuery || document.write(unescape('%3Cscript%20type%3D%22text/javascript%22%20src%3D%22https://www.mofltye.top/usr/plugins/EditorMD/lib/jquery.min.js%22%3E%3C/script%3E'));
+    </script>
+    <script src="https://www.mofltye.top/usr/plugins/EditorMD/lib/marked.min.js"></script>
+    <script src="https://www.mofltye.top/usr/plugins/EditorMD/js/editormd.min.js"></script>
+    <script src="https://www.mofltye.top/usr/plugins/EditorMD/js/emojify.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var parseMarkdown = function () {
+            var markdowns = document.getElementsByClassName("md_content");
+            $(markdowns).each(function () {
+                var markdown = $(this).children("#append-test").text();
+                //$('#md_content_'+i).text('');
+                var editormdView;
+                editormdView = editormd.markdownToHTML($(this).attr("id"), {
+                    markdown: markdown,//+ "\r\n" + $("#append-test").text(),
+                    toolbarAutoFixed: false,
+                    htmlDecode: true,
+                    emoji: true,
+                    tex: true,
+                    toc: true,
+                    tocm: true,
+                    taskList: true,
+                    flowChart: false,
+                    sequenceDiagram: false,
+                });
+            });
+        };
+        parseMarkdown();
+        $(document).on('pjax:complete', function () {
+            parseMarkdown()
+        });
+        emojify.setConfig({
+            img_dir: "//cdn.staticfile.org/emoji-cheat-sheet/1.0.0",
+            blacklist: {
+                'ids': [],
+                'classes': ['no-emojify'],
+                'elements': ['^script$', '^textarea$', '^pre$', '^code$']
+            },
+        });
+        emojify.run();
+    });
+    </script>
+    
+    </body>
+    </html>
